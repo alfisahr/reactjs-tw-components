@@ -1,6 +1,6 @@
 {
   "name": "reactjs-tw-components",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React ready components made by TailwindCSS",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
