@@ -1,5 +1,6 @@
 import React from 'react'
 import { ComponentPropsWithRef } from 'react'
+import '../index.css'
 
 interface InputProps extends ComponentPropsWithRef<'input'> {
   mode?: string
