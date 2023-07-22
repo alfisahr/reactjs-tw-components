@@ -10,7 +10,9 @@
     "url": "git+https://github.com/alfisahr/react-tailwind-components.git"
   },
   "peerDependencies": {
-    "react": ">=16"
+    "react": "^18",
+    "react-dom": "^18",
+    "tailwindcss": "^3"
   },
   "files": [
     "dist",
