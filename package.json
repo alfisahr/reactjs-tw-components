@@ -1,61 +1,41 @@
 {
   "name": "reactjs-tw-components",
   "version": "1.0.0",
-  "description": "React ready components made by TailwindCSS",
-  "main": "./dist/cjs/index.js",
-  "module": "./dist/esm/index.js",
-  "types": "./dist/esm/index.d.ts",
+  "description": "Demo of reactjs tailwindcss components",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --dist-dir docs --public-url .",
+    "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
+    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\""
+  },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/alfisahr/react-tailwind-components.git"
+    "url": "git+https://github.com/alfisahr/reactjs-tw-components.git"
   },
-  "peerDependencies": {
-    "react": "^18",
-    "react-dom": "^18",
-    "tailwindcss": "^3"
-  },
-  "files": [
-    "dist",
-    "LICENSE",
-    "README.md"
-  ],
-  "scripts": {
-    "build": "npm run build:esm && npm run build:cjs",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs",
-    "test": "jest --config jestconfig.json",
-    "lint": "eslint \"{**/*,*}.{js,ts,jsx,tsx}\"",
-    "prettier": "prettier --write \"{src,tests,example/src}/**/*.{js,ts,jsx,tsx}\"",
-    "prepare": "npm run build",
-    "prepublishOnly": "npm test && npm run prettier && npm run lint"
-  },
-  "keywords": [
-    "react",
-    "tailwindcss"
-  ],
   "author": "alfisahr",
   "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/alfisahr/reactjs-tw-components/issues"
+  },
+  "homepage": "https://github.com/alfisahr/reactjs-tw-components#readme",
   "devDependencies": {
-    "@testing-library/react": "^14.0.0",
-    "@types/jest": "^29.5.3",
     "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.1.0",
     "@typescript-eslint/parser": "^6.1.0",
-    "autoprefixer": "^10.4.14",
     "eslint": "^8.45.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^5.0.0",
     "eslint-plugin-react": "^7.33.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "jest": "^29.6.1",
-    "jest-canvas-mock": "^2.5.2",
-    "jest-environment-jsdom": "^29.6.1",
-    "postcss": "^8.4.27",
+    "parcel": "^2.9.3",
     "prettier": "^3.0.0",
+    "process": "^0.11.10",
+    "typescript": "^5.1.6"
+  },
+  "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "tailwindcss": "^3.3.3",
-    "ts-jest": "^29.1.1",
-    "typescript": "^5.1.6"
+    "reactjs-tw-components": "^1.0.0"
   }
 }
